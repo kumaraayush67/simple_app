@@ -15,15 +15,15 @@ class IndexView(generic.ListView):
 class CreateUser(generic.CreateView):
     model = User
     fields = ['Name', 'Phone_no']
-    template_name = 'users/add.html'
-    success_url = reverse_lazy('users:index')
+    # template_name = 'users/add.html'
+    # success_url = reverse_lazy('users:index')
 
 
 class UpdateUser(generic.UpdateView):
     model = User
     fields = ['Name', 'Phone_no']
-    template_name = 'users/add.html'
-    success_url = reverse_lazy('users:index')
+    # template_name = 'users/add.html'
+    # success_url = reverse_lazy('users:index')
 
 
 class DeleteUser(generic.DeleteView):
